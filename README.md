@@ -1,3 +1,3 @@
 # The Figma Store Clone
 
-html , css and Javascript project
+HTML , CSS AND JAVASCRIPT PROJECT
