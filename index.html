@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Figma Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header flex justify-center">
+        <nav class="nav flex justify-between align-center">
+            <div class="nav-inner-container-1 flex align-center">
+                <button>Shop</button>
+                <button>About</button>
+                <img src="./assets/Img-folder/icon-search.static.svg" alt="">
+            </div>
+            <div>
+                <img src="./assets/Img-folder/logo-full.static.svg" alt="">
+            </div>
+            <div class="nav-inner-container-3 ">
+                <select id="header-country-select" class="country-select" :class="{'mobile-opened': mobileOpened}"
+                    @change="changeAndRedirect($event.target.value)">
+                    <option value="store-ca" :selected="subdomain === 'store-ca'">
+                        Canada
+                    </option>
+                    <option value="store-jp" :selected="subdomain === 'store-jp'">
+                        Japan
+                    </option>
+                    <option value="store-uk" :selected="subdomain === 'store-uk'">
+                        United Kingdom
+                    </option>
+                    <option value="store" :selected="subdomain === 'store' || typeof subdomain == 'undefined'"
+                        selected="selected">
+                        United States
+                    </option>
+                    <option value="store-eu" :selected="subdomain === 'store-eu'">
+                        European Union
+                    </option>
+                    <option value="store">
+                        I'm just browsing
+                    </option>
+                </select>
+                <span class="select-icon"> </span>
+                <button>Cart <span class="product-counting">0</span></button>
+            </div>
+        </nav>
+    </header>
+    <!-- Start main content -->
+    <main>
+        <!-- Section - 1 -->
+        <section class="sec-1">
+            <!-- Swiper -->
+          
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <!-- Initialize Swiper -->
+</body>
+
+</html>

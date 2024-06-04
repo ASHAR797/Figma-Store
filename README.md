@@ -1,3 +1,2 @@
-# The Figma Store Clone
-
-HTML , CSS AND JAVASCRIPT PROJECT
+# Tacticool
+html , css and Javascript project
