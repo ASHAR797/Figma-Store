@@ -208,10 +208,13 @@ nav {
 }
 .shop{
     width: 100%;
+    margin-top: 85px;
 }
 .shop-items-container{
     width: 87%;
-    background: aqua;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 30px;
 }
 .small-size-item-card{
     height: 465px;
@@ -220,6 +223,20 @@ nav {
 .small-size-item-card img{
     width: 100%;
     height: 382px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.big-size-item-card{
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 665px;
+}
+.item-card-margin-change{
+    margin-top: -22px ;
+}
+.big-size-item-card img{
+    width: 100%;
+    height: 604px;
     object-fit: cover;
     border-radius: 30px;
 }
@@ -239,4 +256,10 @@ nav {
 .card-info .price , .card-info .new{
     font-size: 22px;
     line-height: 24px;
+}
+/* footer */
+.footer-para{
+     font-size: 18px;
+     line-height: 18px;
+     font-family: 'whyte-regular';
 }
