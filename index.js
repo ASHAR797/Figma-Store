@@ -1,3 +1,12 @@
+// Go to about page btn
+let about_btn  = document.querySelector(".about")
+about_btn.addEventListener('click' , ()=>{
+    window.location = "about.html"
+}) 
+let cart_btn  = document.querySelector(".cart")
+cart_btn.addEventListener('click' , ()=>{
+    window.location = "cart.html"
+}) 
 const cadmg = document.querySelector(".cad-img");
 fastamg = cadmg.querySelectorAll("img")[0];
 cadmgicon = document.querySelectorAll(".slder-cad i");
@@ -65,3 +74,5 @@ cadmg.addEventListener("touchmove",dragging );
 cadmg.addEventListener("mouseup",dragstp);
 cadmg.addEventListener("mouseleave",dragstp);
 cadmg.addEventListener("touchend",dragstp);
+var input = console.log
+

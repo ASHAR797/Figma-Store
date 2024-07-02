@@ -23,7 +23,6 @@ body {
 header {
     width: 100%;
     padding: 22px 0px;
-    background-color: #FFC700;
 }
 
 nav {
@@ -45,6 +44,11 @@ nav {
     line-height: .9;
     padding: 10px 20px 9px;
     text-transform: uppercase;
+}
+
+.nav-inner-container-1 button:nth-child(2) {
+    background-color: #000000;
+    color: white;
 }
 
 .nav-inner-container-1 img {
@@ -95,193 +99,157 @@ nav {
     text-transform: uppercase;
 }
 
-/* Main -conent */
 /* Section - 1 */
 .sec-1 {
-    position: relative;
-}
-
-.slder-cad {
     width: 100%;
-    position: relative;
-    background-color: #FFC700;
-    border-bottom: 4px solid black;
+    gap: 97px;
+    margin-top: 30px;
 }
 
-.slder-cad .cad-img {
-    white-space: nowrap;
-    font-size: 0px;
-    overflow: hidden;
-    scroll-behavior: smooth;
-
+.sec-1 .svg-cutout {
+    stroke: black;
+    stroke-width: 4px;
 }
 
-.cad-img.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
+.sec-1 div:nth-child(2) {
+    width: 40%;
 }
 
-.cad-img.dragging img {
-    pointer-events: none;
+.sec-1 div:nth-child(2) h2 {
+    font-size: 48px;
+    font-family: 'whyte-inktrap';
+    line-height: 52px;
+    padding-bottom: 10px;
 }
 
-.cad-img img:first-child {
-    margin-left: 0px;
+.sec-1 div:nth-child(2) p {
+    font-size: 30px;
+    font-family: 'whyte-Regular';
+    line-height: 39px;
 }
 
-.svg-cutout {
-    margin: 12px 9px;
-    stroke: #000;
-    stroke-width: 6px;
+/* Section - 2 */
+.sec-2 {
+    margin-top: 60px;
 }
 
-.badge {
-    position: absolute;
-    right: 115px;
-    bottom: -75px;
+.sec-2-second-container {
+    gap: 160px;
+    margin-top: 8rem;
 }
 
-.animation--rotate {
-    -webkit-animation: rotate 10s linear 0s infinite;
-    animation: rotate 10s linear 0s infinite;
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
+.sec-2-second-container div:nth-child(1) {
+    width: 25%;
 }
 
-.svg-inner-path {
-    display: none;
-    animation: hidden-visible all infinite 1s;
-}
-
-@keyframes hidden-visible {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.badge:hover .svg-inner-path {
-    display: block;
-    scale: 1;
-}
-
-@keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
-
-.sec-2-heading {
-    margin: 150px 0 50px;
-    text-align: center;
+.sec-2-second-container h2 {
+    font-size: 48px;
+    line-height: 58px;
     font-family: 'Whyte-Inktrap', sans-serif;
-    font-weight: bold;
-    transition: 0.3s ease all ;
+    width: 35%;
 }
 
-.sec-2-heading h2 {
-    font-size: 54px;
-    line-height: 1.2;
-}
-.sec-2-heading:hover{
-    color: #7F7F7F;
+.sec-2-second-container div:nth-child(2) {
+    width: 40%;
+    gap: 60px;
 }
 
-.sec-2-heading h2 img {
-    margin: 0 7px;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.sec-2-second-container div:nth-child(2) p {
+    font-size: 30px;
+    line-height: 39px;
+    font-family: 'whyte-Regular';
 }
 
-.sec-2-heading h2 .special-word {
-    border-bottom: 6px solid black;
-    color: black;
+.sec-2-second-container a {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 900;
+    font-family: 'whyte-Regular';
+    color: #000000;
+    text-decoration: none;
 }
-.shop{
-    width: 100%;
-    margin-top: 85px;
+
+/* Section - 3  , Section - 4 */
+.sec-3-main-container,
+.sec-4-main-container {
+    margin: 120px auto;
+    width: 86.3%;
 }
-.shop-items-container{
-    width: 87%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 37px 30px;
-}
-.small-size-item-card{
-    height: 465px;
-    width: 288px;
-}
-.small-size-item-card img{
-    width: 100%;
-    height: 382px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-.big-size-item-card{
-    grid-column: span 2;
-    grid-row: span 2;
-    height: 665px;
-}
-.item-card-margin-change{
-    margin-top: -22px ;
-}
-.big-size-item-card img{
-    width: 100%;
-    height: 604px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-.card-info{
-    height: 17.7% ;
-    padding-top: 12px;
-    font-family: 'Whyte-Regular' , sans-serif ;
-}
-.card-info > div:nth-child(1){
-    width: 65%;
-}
-.card-info h4{
-    font-size: 22px ;
-    line-height: 22px ;
+
+.sec-3-main-container h2,
+.sec-4-main-container h2 {
+    font-size: 48px;
+    line-height: 58px;
     font-weight: 700;
+    font-family: 'whyte-inktrap';
 }
-.card-info .price , .card-info .new{
-    font-size: 22px;
-    line-height: 24px;
+
+.sec-3-main-container>div:nth-child(2),
+.sec-4-main-container>div:nth-child(2) {
+    width: 46%;
+    gap: 35px;
 }
+
+.sec-3-main-container h3,
+.sec-4-main-container h3 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 10px 0px;
+    font-family: 'whyte-Regular';
+}
+
+.sec-3-main-container p,
+.sec-4-main-container p {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'whyte-Regular';
+}
+
+.sec-3-main-container ul {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Whyte-Regular';
+    list-style: none;
+}
+
+.sec-3-main-container img,
+.sec-4-main-container img {
+    margin-right: 15px;
+}
+
+.country-options {
+    gap: 20px;
+}
+
 /* footer */
-.footer{
+.footer {
     padding: 63px 0px 0px 0px;
     background-color: #C7B9FF;
     margin-top: 65px;
 }
-.footer-first-container{
+
+.footer-first-container {
     width: 80%;
 }
 
-.footer-para{
+.footer-para {
     font-size: 18px;
     line-height: 18px;
     font-family: 'whyte-regular';
     width: 43%;
 }
-.footer-para a{
+
+.footer-para a {
     font-weight: 700;
     text-decoration: none;
-    color: #000000 ;
+    color: #000000;
 }
-.footer-para a:hover{
+
+.footer-para a:hover {
     color: #005EFF;
 }
-.footer-first-container h3{
+
+.footer-first-container h3 {
     width: 10%;
     font-size: 32px;
     line-height: 39px;
@@ -289,12 +257,13 @@ nav {
     font-family: 'Whyte-Regular';
 }
 
-.footer-first-container .footer-ul{
+.footer-first-container .footer-ul {
     list-style: none;
     gap: 14.5px;
-    margin-top: 25px ;
+    margin-top: 25px;
 }
-.footer-first-container .footer-ul li > a{
+
+.footer-first-container .footer-ul li>a {
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
@@ -302,28 +271,34 @@ nav {
     color: #000000;
     font-weight: 400;
 }
-.footer-first-container > div:nth-child(2){
+
+.footer-first-container>div:nth-child(2) {
     width: 68%;
 }
+
 .footer-second-ul {
     width: 54%;
 }
-.footer-second-ul ul{
+
+.footer-second-ul ul {
     display: flex;
     gap: 55px;
     list-style: none;
     margin-top: 6px;
 }
-.footer-second-ul ul li a{
-    font-size: 26px ;
+
+.footer-second-ul ul li a {
+    font-size: 26px;
     line-height: 32px;
     font-family: 'Whyte-Regular';
     color: #000000;
     text-decoration: none;
 }
-.footer-second-ul ul li a:hover{
+
+.footer-second-ul ul li a:hover {
     text-decoration: underline;
 }
+
 /* Footer marquee animation */
 .outline__text {
     font-family: sans-serif;
@@ -337,16 +312,16 @@ nav {
     pointer-events: none;
     overflow: hidden;
     margin-top: 32px;
-  }
-  
-  .marquee__inner-wrap {
+}
+
+.marquee__inner-wrap {
     height: 100%;
     width: 100%;
 }
 
 .marquee span {
     text-align: center;
-    color: #000000; 
+    color: #000000;
     font-weight: 700;
     white-space: nowrap;
     font-size: 26px;
@@ -354,11 +329,11 @@ nav {
     padding: 1.5vw 27px 1.5vw 10px;
     font-family: 'whyte-Regular';
     text-transform: uppercase;
-  }
-  
+}
 
-  
-  .marquee__inner {
+
+
+.marquee__inner {
     height: 100%;
     width: fit-content;
     align-items: center;
@@ -366,10 +341,33 @@ nav {
     position: relative;
     animation: marquee 9s linear infinite;
     will-change: transform;
-  }
-  
-  @keyframes marquee {
+}
+
+@keyframes marquee {
     to {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
-  }
+}
+
+@media (max-width: 767px) {
+    .header nav{
+        display: none;
+    }
+    .sec-1{
+        flex-direction: column;
+    }
+    .sec-1 > div:nth-child(1){
+        height: 440px;
+    }
+    .sec-1 .svg-cutout{
+        width: 90%;
+    }
+    .sec-1 div p{
+        font-size: 20px ;
+        font-weight: 400;
+        line-height: 29px;
+    }
+    .sec-1 div:nth-child(2) {
+        width: 90%;
+    }
+}
