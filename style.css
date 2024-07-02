@@ -56,6 +56,7 @@ nav {
 }
 
 .nav-inner-container-3 select {
+    position: relative;
     text-transform: uppercase;
     font-family: 'Whyte-Regular';
     padding: 10px 40px 9px 20px;
@@ -73,9 +74,9 @@ nav {
 
 .nav-inner-container-3 .select-icon {
     position: absolute;
-    right: 57px;
+    right: 119px;
     pointer-events: none;
-    top: 9px;
+    top: 13px;
 }
 
 .nav-inner-container-3 i {
@@ -94,6 +95,7 @@ nav {
     padding: 10px 20px 9px;
     text-transform: uppercase;
 }
+
 
 /* Main -conent */
 /* Section - 1 */

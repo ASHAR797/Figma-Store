@@ -76,10 +76,3 @@ cadmg.addEventListener("mouseleave",dragstp);
 cadmg.addEventListener("touchend",dragstp);
 var input = console.log
 
-// Gsap animation
-
-gsap.from(".", { opacity: 0, duration: 1, delay: 1 });
-gsap.from(".about-us-text", { opacity: 0, duration: 1, delay: 1.5 });
-gsap.from(".about-us-btn", { opacity: 0, duration: 1, delay: 2 });
-
-gsap.from(".product-img", { opacity: 0, duration: 1, delay: 1, y: -100 });
