@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Whyte-Regular';
+    src: url(./assets/Font-folder/Whyte-Regular.static.otf);
+}
+
+@font-face {
+    font-family: 'Whyte-Inktrap';
+    src: url(./assets/Font-folder/WhyteInktrap-Bold.static.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 22px 0px;
+}
+
+nav {
+    width: 89%;
+}
+
+.nav-inner-container-1 {
+    gap: 10px;
+}
+
+.nav-inner-container-1 button {
+    font-family: 'Whyte-Regular';
+    border: 2px solid #000;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: transparent;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: .9;
+    padding: 10px 20px 9px;
+    text-transform: uppercase;
+}
+
+.nav-inner-container-1 img {
+    margin-left: 20px;
+}
+
+.nav-inner-container-3 {
+    position: relative;
+}
+
+.nav-inner-container-3 select {
+    text-transform: uppercase;
+    font-family: 'Whyte-Regular';
+    padding: 10px 40px 9px 20px;
+    background-color: transparent;
+    appearance: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-inner-container-3 select:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.nav-inner-container-3 .select-icon {
+    position: absolute;
+    right: 57px;
+    pointer-events: none;
+    top: 9px;
+}
+
+.nav-inner-container-3 i {
+    font-size: 15px;
+}
+
+.nav-inner-container-3 button {
+    border: 2px solid #000;
+    font-family: 'Whyte-Regular';
+    border-radius: 30px;
+    display: inline-block;
+    background-color: transparent;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: .9;
+    padding: 10px 20px 9px;
+    text-transform: uppercase;
+}
+.nav-inner-container-3 button{
+     background-color: #000000;
+     color: white ;
+}
+.nav button:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.5s all ;
+}
+
+.cart-items {
+    width: 87%;
+    margin-top: 40px;
+    font-family: "whyte-Regular";
+    gap: 90px;
+}
+
+.count {
+    width: 100%;
+}
+
+.cart-items h3 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+    text-transform: none;
+}
+
+.cart-items h2 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    font-family: 'Whyte-Inktrap';
+}
+
+.cart-items button {
+    padding: 13px 45px;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: bold;
+    font-family: 'Whyte-Regular';
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* footer */
+.footer {
+    padding: 63px 0px 0px 0px;
+    background-color: #C7B9FF;
+    margin-top: 65px;
+}
+
+.footer-first-container {
+    width: 80%;
+}
+
+.footer-para {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'whyte-regular';
+    width: 43%;
+}
+
+.footer-para a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-para a:hover {
+    color: #005EFF;
+}
+
+.footer-first-container h3 {
+    width: 10%;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    font-family: 'Whyte-Regular';
+}
+
+.footer-first-container .footer-ul {
+    list-style: none;
+    gap: 14.5px;
+    margin-top: 25px;
+}
+
+.footer-first-container .footer-ul li>a {
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    font-family: 'Whyte-Regular';
+    color: #000000;
+    font-weight: 400;
+}
+
+.footer-first-container>div:nth-child(2) {
+    width: 68%;
+}
+
+.footer-second-ul {
+    width: 54%;
+}
+
+.footer-second-ul ul {
+    display: flex;
+    gap: 55px;
+    list-style: none;
+    margin-top: 6px;
+}
+
+.footer-second-ul ul li a {
+    font-size: 26px;
+    line-height: 32px;
+    font-family: 'Whyte-Regular';
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-second-ul ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer marquee animation */
+.outline__text {
+    font-family: sans-serif;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+}
+
+.marquee {
+    width: 100%;
+    height: 3rem;
+    pointer-events: none;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.marquee__inner-wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.marquee span {
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 26px;
+    line-height: 26px;
+    padding: 1.5vw 27px 1.5vw 10px;
+    font-family: 'whyte-Regular';
+    text-transform: uppercase;
+}
+
+.marquee__inner {
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    position: relative;
+    animation: marquee 9s linear infinite;
+    will-change: transform;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
